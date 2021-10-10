@@ -1,5 +1,9 @@
 import React from "react";
 import { Typography, Grid, Container } from "@mui/material";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Grow } from "@mui/material";
+import { Box } from "@mui/system";
+import { Avatar } from "@mui/material";
 import Image from "./img";
 import Css from "./../icons/css";
 import Git from "./../icons/git";
@@ -12,74 +16,118 @@ import ReactIcon from "./../icons/react";
 import Terminal from "./../icons/terminal";
 import Vstudio from "./../icons/visual_studio";
 import VScode from "./../icons/vs_code";
+import FaceBook from "./../icons/facebook";
+import Instagram from "./../icons/instagram";
+import Whatsapp from "./../icons/whatsapp";
+import Twitter from "./../icons/twitter";
+import LinkedIn from "./../icons/linkedin";
+import Gmail from "./../icons/gmail";
+import Photo from "./../icons/avatar.png";
 const HomePage = () => {
   return (
-    <div>
-      <Typography variant="h2" color="white">
-        Nirmala Madhusankha
-      </Typography>
-      <Grid container spacing={1} paddingTop={5}>
-        <Grid item lg={5} md={12} sm={12} xs={12}>
-          <Container>
-            <Image />
-          </Container>
+    <Grow in>
+      <div>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", margin: "40px 0 0 30px" }}>
+          <Avatar size="large" src={Photo} />
+          <Typography variant="h3" color="white" marginLeft={2}>
+            Nirmala Madhusankha
+          </Typography>
+        </div>
+        <Grid container spacing={1} paddingTop={5}>
+          <Grid item lg={5} md={12} sm={12} xs={12}>
+            <Container>
+              <Image />
+            </Container>
+          </Grid>
+          <Grid item lg={7} md={12} sm={12} xs={12}>
+            <Container>
+              <div style={{ marginTop: "80px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
+                <Container sx={{ padding: 3 }}>
+                  <Typography variant="h3" color="white" marginBottom={3}>
+                    Hello there !
+                  </Typography>
+                  <Typography variant="h6" color="white">
+                    I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
+                    Electrical and Information Engineering department. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Adipisci impedit eligendi culpa quam a amet voluptatem assumenda similique
+                    suscipit, ipsum fugiat doloribus distinctio, nostrum dolor cupiditate ea voluptates commodi
+                    delectus.
+                  </Typography>
+                </Container>
+              </div>
+            </Container>
+          </Grid>
         </Grid>
-        <Grid item lg={7} md={12} sm={12} xs={12}>
-          <Container>
-            <div style={{ marginTop: "80px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
-              <Container sx={{ padding: 3 }}>
-                <Typography variant="h3" color="white" marginBottom={3}>
-                  Hello there !
-                </Typography>
-                <Typography variant="h6" color="white">
-                  I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
-                  Electrical and Information Engineering department. Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit. Adipisci impedit eligendi culpa quam a amet voluptatem assumenda similique suscipit, ipsum
-                  fugiat doloribus distinctio, nostrum dolor cupiditate ea voluptates commodi delectus.
-                </Typography>
-              </Container>
-            </div>
-          </Container>
+        <Grid container spacing={2} marginBottom={6}>
+          <Grid item lg={5} md={12} sm={12} xs={12}>
+            <Container>
+              <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
+                <Container sx={{ padding: 3 }}>
+                  <Typography variant="h5" color="white" marginBottom="20px">
+                    ⚙️ Currently used Technologies and Tools
+                  </Typography>
+                  <div style={{ diplay: "flex", flexDirection: "column" }}>
+                    <Router>
+                      <Link to={{ pathname: "https://code.visualstudio.com/" }} target="_blank">
+                        <VScode />
+                      </Link>
+                      <Vstudio />
+                      <Html />
+                      <Css />
+                      <Js />
+                      <ReactIcon />
+                      <Node />
+                      <MongoDb />
+                      <Git />
+                      <Github />
+                      <Terminal />
+                    </Router>
+                  </div>
+                </Container>
+              </div>
+            </Container>
+          </Grid>
+          <Grid item lg={7} md={12} sm={12} xs={12}>
+            <Container>
+              <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
+                <Container sx={{ padding: 3 }}>
+                  <Typography variant="h5" color="white" marginBottom="20px">
+                    🙋‍♂️ Find me on ...
+                  </Typography>
+                  <Container>
+                    <Router>
+                      <Link to={{ pathname: "mailto:nirmalasabaragamuwa@gmail.com" }} target="_blank">
+                        <Gmail />
+                      </Link>
+                      <Link to={{ pathname: "https://www.linkedin.com/in/nirmala-sabaragamuwa" }} target="_blank">
+                        <LinkedIn />
+                      </Link>
+                      <Link to={{ pathname: "https://twitter.com/Nims_9T8" }} target="_blank">
+                        <Twitter />
+                      </Link>
+                      <Link to={{ pathname: "https://www.facebook.com/nirmala.madhusankha.1/" }} target="_blank">
+                        <FaceBook />
+                      </Link>
+                      <Link to={{ pathname: "https://www.instagram.com/mad_nirmala/" }} target="_blank">
+                        <Instagram />
+                      </Link>
+                      <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
+                        <Whatsapp />
+                      </Link>
+                    </Router>
+                  </Container>
+                </Container>
+              </div>
+            </Container>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container spacing={2}>
-        <Grid item lg={5} md={12} sm={12} xs={12}>
-          <Container>
-            <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
-              <Container sx={{ padding: 3 }}>
-                <Typography variant="h5" color="white" marginBottom="20px">
-                  ⚙️ Currently used Technologies and Tools
-                </Typography>
-                <div style={{ diplay: "flex", flexDirection: "column" }}>
-                  <VScode />
-                  <Vstudio />
-                  <Html />
-                  <Css />
-                  <Js />
-                  <ReactIcon />
-                  <Node />
-                  <MongoDb />
-                  <Git />
-                  <Github />
-                  <Terminal />
-                </div>
-              </Container>
-            </div>
-          </Container>
-        </Grid>
-        <Grid item lg={7} md={12} sm={12} xs={12}>
-          <Container>
-            <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
-              <Container sx={{ padding: 3 }}>
-                <Typography variant="h5" color="white">
-                  🙋‍♂️ Find me ...
-                </Typography>
-              </Container>
-            </div>
-          </Container>
-        </Grid>
-      </Grid>
-    </div>
+        <Box className="footer">
+          <Typography variant="body2" color="white">
+            ©️ All Rights Reserved
+          </Typography>
+        </Box>
+      </div>
+    </Grow>
   );
 };
 

@@ -1,10 +1,11 @@
 body {
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     background-color: #140c1a;
     overflow-y: scroll;
     width: 100vw;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar {

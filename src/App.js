@@ -1,9 +1,13 @@
-function App() {
+import React from "react";
+import "./App.css";
+import HomePage from "./components/HomePage";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>CV Project</h1>
+    <div>
+      <HomePage />
     </div>
   );
-}
+};
 
 export default App;

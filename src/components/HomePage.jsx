@@ -19,6 +19,7 @@ import VScode from "./../icons/vs_code";
 import FaceBook from "./../icons/facebook";
 import Instagram from "./../icons/instagram";
 import Whatsapp from "./../icons/whatsapp";
+import GithubContact from "./../icons/githubContact";
 import Twitter from "./../icons/twitter";
 import LinkedIn from "./../icons/linkedin";
 import Gmail from "./../icons/gmail";
@@ -38,7 +39,7 @@ const HomePage = () => {
           </Grid>
           <Grid container xl={6} lg={5} md={1} sm={0} xs={0}></Grid>
         </Grid>
-        <Grid container spacing={1} paddingTop={5} justifyContent="center">
+        <Grid container spacing={1} paddingTop={1} justifyContent="center">
           <Grid item lg={5} md={12} sm={12} xs={12}>
             <Container>
               <Image />
@@ -46,10 +47,11 @@ const HomePage = () => {
           </Grid>
           <Grid item lg={7} md={10} sm={12} xs={12}>
             <Container>
-              <div style={{ marginTop: "80px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
+              <div style={{ marginTop: "80px", borderRadius: "12px" }}>
                 <Container sx={{ padding: 3 }}>
                   <Typography variant="h3" color="white" marginBottom={3}>
                     Hello there !
+                    <div style={{ width: "60%", height: "1px", background: "white", marginTop: "3px" }}></div>
                   </Typography>
                   <Typography variant="h6" color="white">
                     I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
@@ -64,12 +66,50 @@ const HomePage = () => {
           </Grid>
         </Grid>
         <Grid container spacing={2} marginBottom={6} justifyContent="center">
-          <Grid item lg={5} md={10} sm={12} xs={12}>
+          <Grid item lg={5} md={10} sm={12} xs={12} direction="column">
             <Container>
-              <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
+              <div style={{ marginTop: "50px", borderRadius: "12px" }}>
                 <Container sx={{ padding: 3 }}>
                   <Typography variant="h5" color="white" marginBottom="20px">
-                    ⚙️ Currently used Technologies and Tools
+                    Contact me
+                    <div style={{ width: "40%", height: "1px", background: "white", margin: "3px 0 0 0" }}></div>
+                  </Typography>
+                  <Container>
+                    <Router>
+                      <Link to={{ pathname: "mailto:nirmalasabaragamuwa@gmail.com" }} target="_blank">
+                        <Gmail />
+                      </Link>
+                      <Link to={{ pathname: "https://www.linkedin.com/in/nirmala-sabaragamuwa" }} target="_blank">
+                        <LinkedIn />
+                      </Link>
+                      <Link to={{ pathname: "https://github.com/Nims98" }} target="_blank">
+                        <GithubContact />
+                      </Link>
+                      {/* <Link to={{ pathname: "https://twitter.com/Nims_9T8" }} target="_blank">
+                        <Twitter />
+                      </Link> */}
+                      <Link to={{ pathname: "https://www.facebook.com/nirmala.madhusankha.1/" }} target="_blank">
+                        <FaceBook />
+                      </Link>
+                      <Link to={{ pathname: "https://www.instagram.com/mad_nirmala/" }} target="_blank">
+                        <Instagram />
+                      </Link>
+                      <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
+                        <Whatsapp />
+                      </Link>
+                    </Router>
+                  </Container>
+                </Container>
+              </div>
+            </Container>
+          </Grid>
+          <Grid item lg={7} md={10} sm={12} xs={12}>
+            <Container>
+              <div style={{ marginTop: "50px", borderRadius: "12px" }}>
+                <Container sx={{ padding: 3 }}>
+                  <Typography variant="h5" color="white" marginBottom="20px">
+                    Currently used Technologies and Tools
+                    <div style={{ width: "70%", height: "1px", background: "white", margin: "3px 0 0 0" }}></div>
                   </Typography>
                   <div style={{ diplay: "flex", flexDirection: "column" }}>
                     <Router>
@@ -88,39 +128,6 @@ const HomePage = () => {
                       <Terminal />
                     </Router>
                   </div>
-                </Container>
-              </div>
-            </Container>
-          </Grid>
-          <Grid item lg={7} md={10} sm={12} xs={12}>
-            <Container>
-              <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
-                <Container sx={{ padding: 3 }}>
-                  <Typography variant="h5" color="white" marginBottom="20px">
-                    🙋‍♂️ Find me on ...
-                  </Typography>
-                  <Container>
-                    <Router>
-                      <Link to={{ pathname: "mailto:nirmalasabaragamuwa@gmail.com" }} target="_blank">
-                        <Gmail />
-                      </Link>
-                      <Link to={{ pathname: "https://www.linkedin.com/in/nirmala-sabaragamuwa" }} target="_blank">
-                        <LinkedIn />
-                      </Link>
-                      <Link to={{ pathname: "https://twitter.com/Nims_9T8" }} target="_blank">
-                        <Twitter />
-                      </Link>
-                      <Link to={{ pathname: "https://www.facebook.com/nirmala.madhusankha.1/" }} target="_blank">
-                        <FaceBook />
-                      </Link>
-                      <Link to={{ pathname: "https://www.instagram.com/mad_nirmala/" }} target="_blank">
-                        <Instagram />
-                      </Link>
-                      <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
-                        <Whatsapp />
-                      </Link>
-                    </Router>
-                  </Container>
                 </Container>
               </div>
             </Container>

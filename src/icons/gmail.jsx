@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography } from "@mui/material";
 const gmail = () => {
   return (
     <span style={{ margin: "5px" }}>

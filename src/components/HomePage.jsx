@@ -27,19 +27,24 @@ const HomePage = () => {
   return (
     <Grow in>
       <div>
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", margin: "40px 0 0 30px" }}>
-          <Avatar size="large" src={Photo} />
-          <Typography variant="h3" color="white" marginLeft={2}>
-            Nirmala Madhusankha
-          </Typography>
-        </div>
-        <Grid container spacing={1} paddingTop={5}>
+        <Grid container direction="row" marginTop={4} justifyContent="center">
+          <Grid container xl={1} lg={1} md={3} sm={8} xs={10} justifyContent="center" marginLeft={1}>
+            <Avatar style={{ width: "140px", height: "140px" }} src={Photo} />
+          </Grid>
+          <Grid container xl={4} lg={5} md={6} sm={10} xs={10} marginTop={5} justifyContent="center">
+            <Typography variant="h3" color="white" textAlign="center">
+              Nirmala Madhusankha
+            </Typography>
+          </Grid>
+          <Grid container xl={6} lg={5} md={1} sm={0} xs={0}></Grid>
+        </Grid>
+        <Grid container spacing={1} paddingTop={5} justifyContent="center">
           <Grid item lg={5} md={12} sm={12} xs={12}>
             <Container>
               <Image />
             </Container>
           </Grid>
-          <Grid item lg={7} md={12} sm={12} xs={12}>
+          <Grid item lg={7} md={10} sm={12} xs={12}>
             <Container>
               <div style={{ marginTop: "80px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
                 <Container sx={{ padding: 3 }}>
@@ -58,8 +63,8 @@ const HomePage = () => {
             </Container>
           </Grid>
         </Grid>
-        <Grid container spacing={2} marginBottom={6}>
-          <Grid item lg={5} md={12} sm={12} xs={12}>
+        <Grid container spacing={2} marginBottom={6} justifyContent="center">
+          <Grid item lg={5} md={10} sm={12} xs={12}>
             <Container>
               <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
                 <Container sx={{ padding: 3 }}>
@@ -87,7 +92,7 @@ const HomePage = () => {
               </div>
             </Container>
           </Grid>
-          <Grid item lg={7} md={12} sm={12} xs={12}>
+          <Grid item lg={7} md={10} sm={12} xs={12}>
             <Container>
               <div style={{ marginTop: "50px", border: "5px solid rgba(255,255,255,0.3)", borderRadius: "12px" }}>
                 <Container sx={{ padding: 3 }}>

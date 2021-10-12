@@ -29,17 +29,17 @@ const HomePage = () => {
     <Grow in>
       <div>
         <Grid container direction="row" marginTop={4} justifyContent="center">
-          <Grid container xl={1} lg={1} md={3} sm={8} xs={10} justifyContent="center" marginLeft={1}>
-            <Avatar style={{ width: "140px", height: "140px" }} src={Photo} />
+          <Grid container xl={1} lg={1} md={2} sm={8} xs={10} justifyContent="center">
+            <Avatar style={{ width: "120px", height: "120px" }} src={Photo} />
           </Grid>
-          <Grid container xl={4} lg={5} md={6} sm={10} xs={10} marginTop={5} justifyContent="center">
-            <Typography variant="h3" color="white" textAlign="center">
+          <Grid container xl={3} lg={4} md={5} sm={10} xs={10} marginTop={5} justifyContent="center">
+            <Typography variant="h4" color="white" textAlign="center">
               Nirmala Madhusankha
             </Typography>
           </Grid>
-          <Grid container xl={6} lg={5} md={1} sm={0} xs={0}></Grid>
+          <Grid container xl={7} lg={6} md={3} sm={0} xs={0}></Grid>
         </Grid>
-        <Grid container spacing={1} paddingTop={1} justifyContent="center">
+        <Grid container marginBottom={8} spacing={1} paddingTop={1} justifyContent="center" alignItems="center">
           <Grid item lg={5} md={12} sm={12} xs={12}>
             <Container>
               <Image />
@@ -47,13 +47,13 @@ const HomePage = () => {
           </Grid>
           <Grid item lg={7} md={10} sm={12} xs={12}>
             <Container>
-              <div style={{ marginTop: "80px", borderRadius: "12px" }}>
+              <div style={{ marginTop: "0px" }}>
                 <Container sx={{ padding: 3 }}>
                   <Typography variant="h3" color="white" marginBottom={3}>
                     Hello there !
                     <div style={{ width: "60%", height: "1px", background: "white", marginTop: "3px" }}></div>
                   </Typography>
-                  <Typography variant="h6" color="white">
+                  <Typography variant="subtitle1" color="white">
                     I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
                     Electrical and Information Engineering department. Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit. Adipisci impedit eligendi culpa quam a amet voluptatem assumenda similique
@@ -65,10 +65,10 @@ const HomePage = () => {
             </Container>
           </Grid>
         </Grid>
-        <Grid container spacing={2} marginBottom={6} justifyContent="center">
+        <Grid container spacing={2} marginBottom={2} justifyContent="center">
           <Grid item lg={5} md={10} sm={12} xs={12} direction="column">
             <Container>
-              <div style={{ marginTop: "50px", borderRadius: "12px" }}>
+              <div>
                 <Container sx={{ padding: 3 }}>
                   <Typography variant="h5" color="white" marginBottom="20px">
                     Contact me
@@ -105,7 +105,7 @@ const HomePage = () => {
           </Grid>
           <Grid item lg={7} md={10} sm={12} xs={12}>
             <Container>
-              <div style={{ marginTop: "50px", borderRadius: "12px" }}>
+              <div>
                 <Container sx={{ padding: 3 }}>
                   <Typography variant="h5" color="white" marginBottom="20px">
                     Currently used Technologies and Tools
@@ -135,7 +135,7 @@ const HomePage = () => {
         </Grid>
         <Box className="footer">
           <Typography variant="body2" color="white">
-            ©️ All Rights Reserved
+            ©️ 2021 All Rights Reserved
           </Typography>
         </Box>
       </div>

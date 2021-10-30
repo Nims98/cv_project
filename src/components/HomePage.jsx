@@ -6,6 +6,7 @@ import { Box } from "@mui/system";
 import { Avatar } from "@mui/material";
 import Image from "./img";
 import Css from "./../icons/css";
+import Scss from "./../icons/sass";
 import Git from "./../icons/git";
 import Github from "./../icons/github";
 import Html from "./../icons/html";
@@ -55,7 +56,7 @@ const HomePage = () => {
                 <Container sx={{ padding: 3 }}>
                   <Typography variant="h3" color="white" marginBottom={3}>
                     Hello there !
-                    <hr style={{ width: "60%", background: "whitesmoke", margin: "3px 0 0 0" }} />
+                    <hr style={{ width: "70%", background: "whitesmoke", margin: "3px 0 0 0" }} />
                   </Typography>
                   <Typography variant="subtitle1" color="white" sx={{ fontFamily: "Segoe UI", fontWeight: "400" }}>
                     I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
@@ -70,7 +71,43 @@ const HomePage = () => {
           </Grid>
           <Grid container spacing={2} marginBottom={2} justifyContent="center">
             <Grid item lg={5} md={10} sm={12} xs={12} direction="column">
-              <Container sx={{ padding: 3, marginLeft: 2 }}>
+              <Container>
+                <div>
+                  <Container sx={{ padding: 3 }}>
+                    <Typography variant="h6" color="white" marginBottom="20px" className="sub-text">
+                      Currently Used Tools and Technologies
+                      <hr style={{ width: "80%", background: "whitesmoke", margin: "3px 0 0 0" }} />
+                    </Typography>
+                    <Grid
+                      container
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}>
+                      <Router>
+                        <Link to={{ pathname: "https://code.visualstudio.com/" }} target="_blank">
+                          <VScode />
+                        </Link>
+                        <Vstudio />
+                        <Html />
+                        <Css />
+                        <Scss />
+                        <Js />
+                        <ReactIcon />
+                        <Node />
+                        <MongoDb />
+                        <Git />
+                        <Github />
+                        <Terminal />
+                      </Router>
+                    </Grid>
+                  </Container>
+                </div>
+              </Container>
+            </Grid>
+            <Grid item lg={7} md={10} sm={12} xs={12}>
+              <Container sx={{ padding: 3, marginLeft: 3 }}>
                 <Typography variant="h6" color="white" marginBottom="20px" className="sub-text">
                   Reach Me
                   <hr style={{ width: "50%", background: "whitesmoke", margin: "3px 0 0 0" }} />
@@ -95,44 +132,10 @@ const HomePage = () => {
                     <Link to={{ pathname: "https://www.instagram.com/mad_nirmala/" }} target="_blank">
                       <Instagram />
                     </Link>
-                    <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
+                    {/* <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
                       <Whatsapp />
-                    </Link>
+                    </Link> */}
                   </Router>
-                </div>
-              </Container>
-            </Grid>
-            <Grid item lg={7} md={10} sm={12} xs={12}>
-              <Container>
-                <div>
-                  <Container sx={{ padding: 3 }}>
-                    <Typography variant="h6" color="white" marginBottom="20px" className="sub-text">
-                      Currently Used Tools and Technologies
-                      <hr style={{ width: "80%", background: "whitesmoke", margin: "3px 0 0 0" }} />
-                    </Typography>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        height: "40px",
-                      }}>
-                      <Router>
-                        <Link to={{ pathname: "https://code.visualstudio.com/" }} target="_blank">
-                          <VScode />
-                        </Link>
-                        <Vstudio />
-                        <Html />
-                        <Css />
-                        <Js />
-                        <ReactIcon />
-                        <Node />
-                        <MongoDb />
-                        <Git />
-                        <Github />
-                        <Terminal />
-                      </Router>
-                    </div>
-                  </Container>
                 </div>
               </Container>
             </Grid>

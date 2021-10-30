@@ -4,8 +4,8 @@ const node = () => {
   return (
     <span style={{ margin: "5px" }}>
       <svg
-        width="30px"
-        height="30px"
+        width="24px"
+        height="24px"
         viewBox="0 0 256 282"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMinYMin meet">

@@ -34,7 +34,11 @@ const HomePage = () => {
               <Avatar style={{ width: "120px", height: "120px" }} src={Photo} />
             </Grid>
             <Grid container xl={3} lg={4} md={5} sm={10} xs={10} marginTop={5} justifyContent="center">
-              <Typography variant="h4" color="white" textAlign="center">
+              <Typography
+                variant="h4"
+                color="white"
+                textAlign="center"
+                sx={{ fontFamily: "Segoe UI", fontWeight: "400" }}>
                 Nirmala Madhusankha
               </Typography>
             </Grid>
@@ -48,59 +52,53 @@ const HomePage = () => {
             </Grid>
             <Grid item lg={7} md={10} sm={12} xs={12}>
               <Container>
-                <div style={{ marginTop: "0px" }}>
-                  <Container sx={{ padding: 3 }}>
-                    <Typography variant="h3" color="white" marginBottom={3}>
-                      Hello there !
-                      <div style={{ width: "60%", height: "1px", background: "white", marginTop: "3px" }}></div>
-                    </Typography>
-                    <Typography variant="subtitle1" color="white">
-                      I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
-                      Electrical and Information Engineering department and to be specialzed in Software Engineering.At
-                      the moment I'm interested in Web Development and doing some related stuff.Below I have listed some
-                      of skills I've gained recently related to Web Dev and my contact links.This portfolio will be
-                      updated as I progress through my carrier.
-                    </Typography>
-                  </Container>
-                </div>
+                <Container sx={{ padding: 3 }}>
+                  <Typography variant="h3" color="white" marginBottom={3}>
+                    Hello there !
+                    <hr style={{ width: "60%", background: "whitesmoke", margin: "3px 0 0 0" }} />
+                  </Typography>
+                  <Typography variant="subtitle1" color="white" sx={{ fontFamily: "Segoe UI", fontWeight: "400" }}>
+                    I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
+                    Electrical and Information Engineering department and to be specialzed in Software Engineering.At
+                    the moment I'm interested in Web Development and doing some related stuff.Below I have listed some
+                    of skills I've gained recently related to Web Dev and my contact links.This portfolio will be
+                    updated as I progress through my carrier.
+                  </Typography>
+                </Container>
               </Container>
             </Grid>
           </Grid>
           <Grid container spacing={2} marginBottom={2} justifyContent="center">
             <Grid item lg={5} md={10} sm={12} xs={12} direction="column">
-              <Container>
+              <Container sx={{ padding: 3, marginLeft: 2 }}>
+                <Typography variant="h6" color="white" marginBottom="20px" className="sub-text">
+                  Reach Me
+                  <hr style={{ width: "50%", background: "whitesmoke", margin: "3px 0 0 0" }} />
+                </Typography>
                 <div>
-                  <Container sx={{ padding: 3 }}>
-                    <Typography variant="h5" color="white" marginBottom="20px">
-                      Contact me
-                      <div style={{ width: "40%", height: "1px", background: "white", margin: "3px 0 0 0" }}></div>
-                    </Typography>
-                    <Container>
-                      <Router>
-                        <Link to={{ pathname: "mailto:nirmalasabaragamuwa@gmail.com" }} target="_blank">
-                          <Gmail />
-                        </Link>
-                        <Link to={{ pathname: "https://www.linkedin.com/in/nirmala-sabaragamuwa" }} target="_blank">
-                          <LinkedIn />
-                        </Link>
-                        <Link to={{ pathname: "https://github.com/Nims98" }} target="_blank">
-                          <GithubContact />
-                        </Link>
-                        {/* <Link to={{ pathname: "https://twitter.com/Nims_9T8" }} target="_blank">
+                  <Router>
+                    <Link to={{ pathname: "mailto:nirmalasabaragamuwa@gmail.com" }} target="_blank">
+                      <Gmail />
+                    </Link>
+                    <Link to={{ pathname: "https://www.linkedin.com/in/nirmala-sabaragamuwa" }} target="_blank">
+                      <LinkedIn />
+                    </Link>
+                    <Link to={{ pathname: "https://github.com/Nims98" }} target="_blank">
+                      <GithubContact />
+                    </Link>
+                    {/* <Link to={{ pathname: "https://twitter.com/Nims_9T8" }} target="_blank">
                         <Twitter />
                       </Link> */}
-                        <Link to={{ pathname: "https://www.facebook.com/nirmala.madhusankha.1/" }} target="_blank">
-                          <FaceBook />
-                        </Link>
-                        <Link to={{ pathname: "https://www.instagram.com/mad_nirmala/" }} target="_blank">
-                          <Instagram />
-                        </Link>
-                        <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
-                          <Whatsapp />
-                        </Link>
-                      </Router>
-                    </Container>
-                  </Container>
+                    <Link to={{ pathname: "https://www.facebook.com/nirmala.madhusankha.1/" }} target="_blank">
+                      <FaceBook />
+                    </Link>
+                    <Link to={{ pathname: "https://www.instagram.com/mad_nirmala/" }} target="_blank">
+                      <Instagram />
+                    </Link>
+                    <Link to={{ pathname: "https://wa.me/94719629058" }} target="_blank">
+                      <Whatsapp />
+                    </Link>
+                  </Router>
                 </div>
               </Container>
             </Grid>
@@ -108,11 +106,16 @@ const HomePage = () => {
               <Container>
                 <div>
                   <Container sx={{ padding: 3 }}>
-                    <Typography variant="h5" color="white" marginBottom="20px">
-                      Currently used Technologies and Tools
-                      <div style={{ width: "70%", height: "1px", background: "white", margin: "3px 0 0 0" }}></div>
+                    <Typography variant="h6" color="white" marginBottom="20px" className="sub-text">
+                      Currently Used Tools and Technologies
+                      <hr style={{ width: "80%", background: "whitesmoke", margin: "3px 0 0 0" }} />
                     </Typography>
-                    <div style={{ diplay: "flex", flexDirection: "column" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        height: "40px",
+                      }}>
                       <Router>
                         <Link to={{ pathname: "https://code.visualstudio.com/" }} target="_blank">
                           <VScode />

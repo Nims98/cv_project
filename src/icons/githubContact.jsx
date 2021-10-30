@@ -2,11 +2,11 @@ import React from "react";
 
 const github = () => {
   return (
-    <span style={{ margin: "5px" }}>
+    <span style={{ margin: "0px 5px 10px 5px" }}>
       <svg
-        viewBox="0 0 17 16"
+        viewBox="0 0 17 18"
         version="1.1"
-        width="25px"
+        width="21px"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

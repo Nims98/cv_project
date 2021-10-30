@@ -2,8 +2,8 @@ import React from "react";
 
 const mongodb = () => {
   return (
-    <span style={{ margin: "5px" }}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
+    <span style={{ margin: "6px 5px 5px 5px" }}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="31px" height="31px">
         <path
           fill="#5d4037"
           d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"

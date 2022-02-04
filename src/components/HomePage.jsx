@@ -60,7 +60,7 @@ const HomePage = () => {
                   </Typography>
                   <Typography variant="subtitle1" color="white" sx={{ fontFamily: "Segoe UI", fontWeight: "400" }}>
                     I'm an Undergraduate Engineering student at University of Ruhuna Srilanka.Currently studies under
-                    Electrical and Information Engineering department and to be specialzed in Software Engineering.At
+                    Electrical and Information Engineering department and to be specialized in Software Engineering.At
                     the moment I'm interested in Web Development and doing some related stuff.Below I have listed some
                     of skills I've gained recently related to Web Dev and my contact links.This portfolio will be
                     updated as I progress through my carrier.
